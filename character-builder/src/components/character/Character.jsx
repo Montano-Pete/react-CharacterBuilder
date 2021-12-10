@@ -2,13 +2,13 @@ import React from 'react';
 
 export default function Character({ head, torso, pants }) {
   return (
-    <section>
+    <section className="entire-character">
       <div className="head">
         <img
           alt="character-head"
           src={`${head}-head.png`}
-          width="300"
-          height="300"
+          width="200"
+          height="200"
         ></img>
       </div>
 
@@ -16,8 +16,8 @@ export default function Character({ head, torso, pants }) {
         <img
           alt="character-torso"
           src={`${torso}-torso.png`}
-          width="300"
-          height="300"
+          width="200"
+          height="200"
         ></img>
       </div>
 
@@ -25,8 +25,8 @@ export default function Character({ head, torso, pants }) {
         <img
           alt="character-pants"
           src={`${pants}-pants.png`}
-          width="300"
-          height="300"
+          width="200"
+          height="200"
         ></img>
       </div>
     </section>
