@@ -7,8 +7,8 @@ export default function Controls({
   onTorsoChange,
   pants,
   onPantChange,
-  catchPhrase,
-  setCatchphrase,
+  newCatchphrase,
+  setCatchphrases,
   handleClick,
 }) {
   const headChoices = ['bird', 'dog', 'duck'];
@@ -57,8 +57,8 @@ export default function Controls({
         Catch Phrase:
         <input
           type="text"
-          value={catchPhrase}
-          onChange={(event) => setCatchphrase(event.target.value)}
+          value={newCatchphrase}
+          onChange={(event) => setCatchphrases(event.target.value)}
         />
         <button type="button" onClick={handleClick}>
           Add a catchphrase!

@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Catchphrase({ catchPhrase }) {
+export default function Catchphrase({ catchphrases }) {
   return (
     <div>
-      {catchPhrase.map((phrase) => (
+      {catchphrases.map((phrase) => (
         <p key={phrase}>{phrase}</p>
       ))}
     </div>
